@@ -1,3 +1,24 @@
+.busca-portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+.busca-portfolio input {
+  margin-bottom: 2.4rem;
+  font: 300 2.4rem 'Titillium Web', sans-serif;
+  height: 4rem;
+  width: 34rem;
+  
+}
+
+.busca-portfolio img {
+  border-radius: 50%;
+  width: 09%;
+  border: 2px solid #89ff00;
+
+}
 
 .page-header {
     top: 0;

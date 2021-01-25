@@ -84,7 +84,6 @@ input:focus:-ms-input-placeholder {
 
   .page-header .top-bar-container a img {
       width: 10em;
-
   }
   
   .page-header .top-bar-container a:hover {
@@ -127,16 +126,16 @@ input:focus:-ms-input-placeholder {
     text-decoration:none;
     text-shadow:0px 1px 0px #7cacde;
   }
+
   #btn:hover {
     background:linear-gradient(to bottom, #468ccf 5%, #63b8ee 100%);
     background-color:#468ccf;
   }
+
   #btn:active {
     position:relative;
     top:1px;
   }
-
- 
 
   /* STYLES CARDS */
 body {
@@ -270,11 +269,16 @@ main .avatar h1 {
 }
 
 .box .content h2 {
-    font-size: 20px;
-    color: #fff;
-    font-weight: 500;
-    line-height: 20px;
-    letter-spacing: 1px;
+  margin-top: 2.4rem;
+}
+
+.box .content h2, a {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 1px;
 }
 
 .box .content a {
@@ -283,4 +287,27 @@ main .avatar h1 {
   font-weight: 500;
   line-height: 20px;
   letter-spacing: 1px;
+  padding: 1.4rem;
+  height: 4rem;
+}
+
+.box .content a:hover {
+  color: rgb(255, 0, 0);
+}
+
+.btn-card { 
+  width: 24rem;
+  height: 4rem;
+  background-color:#fff;
+  border-radius:6px;
+  cursor:pointer;
+  color:#000;
+  font-family: 'Titillium Web', sans-serif;
+  font-size:15px;
+  font-weight:bold;
+  margin: 0.4rem 0 1.4rem 0;
+}
+
+.btn-card:hover {
+  background-color: #e1f017;
 }

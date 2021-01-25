@@ -1,0 +1,73 @@
+/* Telefones em paisagem e abaixo */
+@media (max-width: 480px) {
+    .page-header {
+        width: 100% !important;
+        padding:0 !important;
+    }
+
+    .inputUser {
+        font-size: 1.8rem !important;
+        width: 24rem !important;
+    }
+
+    #btn {
+        width: 24rem !important;
+        margin-bottom: 1.4rem;
+    }
+
+    .item2 a {
+        width: 28rem !important;
+        margin-top: 2.6rem;
+    }
+
+    .page-header .top-bar-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .page-header .top-bar-container img {
+        width: 50% !important;
+        justify-content: center !important;
+    }
+
+    .logoImg {
+        visibility: hidden;
+    }
+}
+
+/* Telefones em paisagem a tablet em retrato */
+@media (max-width: 767px) {
+    .item3 img {
+        visibility: hidden;
+        background-color: red;
+    }
+
+    .page-header .top-bar-container img {
+        width: 50% !important;
+        justify-content: center !important;
+    }
+}
+
+@media (max-width: 768px) and (max-width: 776px) {
+    .item3 img {
+        width: 105% !important;
+        margin-top: 24.4rem;
+      }
+}
+
+
+/* Tablet em retrato a paisagem e desktop */
+@media (min-width: 777px) and (max-width: 1199px) {
+    .item3 img {
+        width: 105% !important;
+        margin-top: 12.4rem;
+      }
+}
+
+@media (min-width:1200px) and (max-width: 1730px) {
+    .item3 img {
+        width: 105% !important;
+        margin-top: 4.4rem;
+    }
+}

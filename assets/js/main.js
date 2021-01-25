@@ -43,7 +43,7 @@ function main() {
                     <h2>${name}</h2>
                     
                     <a target="_blank" href="${linkRepo}">ir para o repositório</a>
-                    <button onclick="clone('git clone ${cloneRepo}')">Clonar o repositório</button>
+                    <button class="btn-card" onclick="clone('git clone ${cloneRepo}')">Clonar o repositório</button>
                     
                     </div>
                     </div>

@@ -23,7 +23,8 @@
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
    ". texto image ."
-   ". button image .";}
+   ". button image .";
+}
 
 .item1 {
   margin-top: 5rem;
@@ -37,8 +38,6 @@
 
 .item1 p {
   font: 300 3.6rem 'Titillium Web', sans-serif;
-
-
 }
 
 .item2 {
@@ -64,8 +63,7 @@
 
 .item2 a:hover {
   background-color: #ff5252;
-  color: #000;
-  
+  color: #000;  
 }
 
 .item2 a img {

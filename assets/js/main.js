@@ -1,17 +1,19 @@
-
 let xhr = new XMLHttpRequest();
 
 let btn = document.querySelector('#btn');
 btn.addEventListener('click', main);
 
+let inputEnter = document.querySelector('.inputUser'); //Evento para Capturar o Enter! e executar quando digitar o usuario.
+inputEnter.addEventListener('keypress', (e)=> {
+        if (e.keyCode ===13) {
+            main();
+        }
+});
+
 function main() {
     let user = document.querySelector('.inputUser').value;
-
-
     let card = document.querySelector('main');
     let url = `https://api.github.com/users/${user}/repos`;
-
-
 
     xhr.open('GET', url)
     xhr.onreadystatechange = function () {
@@ -25,10 +27,9 @@ function main() {
             <h1>${nameUser}</h1></div>            
             `
 
-
             for (let i = 0; i < dataJSONObj.length; i++) {
                 const imgCard = dataJSONObj[i].language
-                const clone = dataJSONObj[i].clone_url
+                const cloneRepo = dataJSONObj[i].clone_url
 
                 const linkRepo = dataJSONObj[i].html_url;
                 const name = dataJSONObj[i].name;
@@ -42,21 +43,30 @@ function main() {
                     <h2>${name}</h2>
                     
                     <a target="_blank" href="${linkRepo}">ir para o repositório</a>
-                    <a target="_blank" href="${linkRepo}">Clonar o repositório</a>
+                    <button onclick="clone('git clone ${cloneRepo}')">Clonar o repositório</button>
                     
                     </div>
-                    </div>          
+                    </div>
                     `
             }
-
-            
-
         }
     }
     xhr.send();
+
+    clear();
 }
 
 function clear() {
     const repos = document.querySelector('main')
     repos.innerHTML = ""
+}
+
+function clone(url) {
+    const input = document.createElement("input");
+    input.value = url;
+    input.id = "input";
+    document.body.appendChild(input);
+    input.select();
+    document.execCommand("copy");
+    input.remove();
 }

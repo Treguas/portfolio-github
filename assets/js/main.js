@@ -24,25 +24,25 @@ function main() {
             card.innerHTML += `<div class="avatar"><img src="${avatarUrl}">
             <h1>${nameUser}</h1></div>            
             `
-            
-        
-
-    
 
 
             for (let i = 0; i < dataJSONObj.length; i++) {
+                const imgCard = dataJSONObj[i].language
+                const clone = dataJSONObj[i].clone_url
+
                 const linkRepo = dataJSONObj[i].html_url;
                 const name = dataJSONObj[i].name;
                 card.innerHTML +=
                     `              
                     <div class="box">        
                     <div class="imgBx">
-                        <img src="https://images.unsplash.com/photo-1611083055738-75c667309090?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60.jpg" alt="">
+                        <img src="./assets/img/${imgCard}.png" alt="imagem de fundo dos cards">
                     </div>
                     <div class="content">
                     <h2>${name}</h2>
                     
                     <a target="_blank" href="${linkRepo}">ir para o repositório</a>
+                    <a target="_blank" href="${linkRepo}">Clonar o repositório</a>
                     
                     </div>
                     </div>          

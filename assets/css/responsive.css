@@ -26,9 +26,11 @@
         justify-content: center;
     }
 
-    .page-header .top-bar-container img {
+    .page-header .top-bar-container a img {
+        margin-left: 4.4rem !important;
         width: 50% !important;
         justify-content: center !important;
+        align-items: center;
     }
 
     .logoImg {
@@ -63,11 +65,23 @@
         width: 105% !important;
         margin-top: 12.4rem;
       }
+
+      .page-header .top-bar-container a img {
+        width: 50% !important;
+        justify-content: centers !important;
+    }
+
+      
 }
 
 @media (min-width:1200px) and (max-width: 1730px) {
     .item3 img {
         width: 105% !important;
         margin-top: 4.4rem;
+    }
+
+    .page-header .top-bar-container a img {
+        width: 50% !important;
+        justify-content: centers !important;
     }
 }
